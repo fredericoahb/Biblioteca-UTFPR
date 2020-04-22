@@ -7,15 +7,15 @@ O objetivo é implementar uma aplicação para o seguinte sistema de empréstimo
 
 A equipe será composta por 5 pessoas que irão desempenhar os seguintes papéis:
 
-Usuário do sistema - Nemer;
+* Usuário do sistema - Nemer;
 
-Desenvolvedor/projetista - interface gráfica (package IG) - Allan;
+* Desenvolvedor/projetista - interface gráfica (package IG) - Allan;
 
-Desenvolvedor/projetista - banco de dados (package BD) - Adriana;
+* Desenvolvedor/projetista - banco de dados (package BD) - Adriana;
 
-Desenvolvedor - aplicação (package AP) - Nilson;
+* Desenvolvedor - aplicação (package AP) - Nilson;
 
-Integrador - Frederico;
+* Integrador - Frederico;
 
 Atividades que serão executadas:
 
@@ -25,7 +25,7 @@ O Desenvolvedor/projetista - interface gráfica deve validar com o usuário as i
 
 O Desenvolvedor/projetista - banco de dados deve projetar e validar o modelo físico de dados, juntamente com o Desenvolvedor/projetista - interface gráfica;
 
-O Desenvolvedor - aplicação deve criar as classes e métodos necessários para a implementação do sistema*. Estas classes e métodos devem ser validadas com o Desenvolvedor/projetista - interface gráfica e com o Desenvolvedor/projetista - banco de dados;
+O Desenvolvedor - aplicação deve criar as classes e métodos necessários para a implementação do sistema. Estas classes e métodos devem ser validadas com o Desenvolvedor/projetista - interface gráfica e com o Desenvolvedor/projetista - banco de dados;
 
 O Integrador deve produzir um diagrama de rastreabilidade para demonstrar como cada um dos pacotes estão relacionados, e validar a versão final com o Usuário;
 
@@ -33,13 +33,15 @@ O Integrador deve produzir um diagrama de rastreabilidade para demonstrar como c
 
 Frontend: HTML, CSS, BootStrap, JavaScript
 
-Backend: C#, ASP.NET
+Backend: Java
 
-Database: MySQL
+Database: PostgreSQL
 
 ### Pre-requisites:
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/community/)
+* Eclipse
 
+## História de Usuário
+Análise de Requisitos do projeto.
 
 ## Interface
 Algumas telas geradas e aprovadas pelo usuário.
