@@ -1,8 +1,8 @@
 # Biblioteca-UTFPR
 
-O objetivo é implementar* uma aplicação para o seguinte sistema de empréstimos/devolução de livros em uma biblioteca:
+O objetivo é implementar uma aplicação para o seguinte sistema de empréstimos/devolução de livros em uma biblioteca:
 
-### Signup Page 
+### Diagrama de Classes
 <img src="DiagramaDeClasses.JPG"/>
 
 A equipe será composta por 5 pessoas que irão desempenhar os seguintes papéis:
