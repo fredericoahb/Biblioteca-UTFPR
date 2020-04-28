@@ -31,7 +31,8 @@
 </head>
 <body>
 <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+ <div>
+    <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
@@ -43,85 +44,76 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="aluno.html">Cadastrar Aluno</a></li>
-          <li><a href="autor.html">Cadastrar Autor</a></li>
-          <li><a href="obra.html">Cadastrar Obra</a></li>
-          <li><a href="emprestimo.html">Realizar empréstimo</a></li>
-          <li><a href="relatorio.html">Relatório</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#aluno">Cadastrar Aluno</a></li>
+          <li><a href="#autor">Cadastrar Autor</a></li>
+          <li><a href="#obra">Cadastrar Obra</a></li>
+          <li><a href="#emprestimo">Realizar empréstimo</a></li>
+          <li><a href="#relatorio">Relatório</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">Bem vindo a <span>UTFPR</span></h2>
-          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animated fadeInUp scrollto">Leia Mais</a>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
-          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animated fadeInUp scrollto">Leia Mais</a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animated fadeInUp scrollto">Leia Mais</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Próximo</span>
-      </a>
-
     </div>
-
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-    </svg>
-
-  </section><!-- End Hero -->
-          
-          
-          
-<!-- ======= Footer ======= -->
+    
+ <!-- ======= Hero Section ======= -->
+        <div class="d-flex flex-column justify-content-end align-items-center">
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+             </div>
+    
+    
+    
+    <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <h3>UTFPR</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <p>Universidade Tecnológica Federal do Paraná</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
