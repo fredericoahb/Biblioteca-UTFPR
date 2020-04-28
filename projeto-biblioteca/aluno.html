@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Biblioteca UTFPR</title>
   <meta content="" name="descriptison">
@@ -13,9 +14,11 @@
   <link href="assets/img/utf.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files --> 
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -29,87 +32,52 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- ======= Header ======= -->
- <div>
-    <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
-    <div class="container d-flex align-items-center">
 
-      <div class="logo mr-auto">
-        <!-- <h1 class="text-light"><a href="index.html">Biblioteca UTFPR</a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"> <img src="assets/img/utf.png" alt="" class="img-fluid"></a>
+
+  <!-- ======= Form Section ======= -->
+  <div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputUsername">Nome do usuário</label>
+          <input type="text" class="form-control" id="inputUsername">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputBirthday">Data de Nascimento</label>
+          <input type="date" class="form-control" id="inputBirthday">
+        </div>
       </div>
+      <div class="form-group">
+        <label for="inputAddress">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress">
+      </div>     
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Cidade</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Estado</label>
+          <select id="inputState" class="form-control">
+            <option selected>Escolha...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">CEP</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+  </div>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#aluno">Cadastrar Aluno</a></li>
-          <li><a href="#autor">Cadastrar Autor</a></li>
-          <li><a href="#obra">Cadastrar Obra</a></li>
-          <li><a href="#emprestimo">Realizar empréstimo</a></li>
-          <li><a href="#relatorio">Relatório</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
 
-    </div>
-  </header><!-- End Header -->
-    </div>
-    
- <!-- ======= Hero Section ======= -->
-        <div class="d-flex flex-column justify-content-end align-items-center">
-<form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-             </div>
-    
-    
-    
-    <!-- ======= Footer ======= -->
+
+
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <h3>UTFPR</h3>
@@ -151,4 +119,5 @@
 
 
 </body>
+
 </html>
