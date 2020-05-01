@@ -30,35 +30,41 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
 </head>
 
 <body>
-  <header id="header">
-    <div>
 
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html">Biblioteca UTFPR</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"> <img src="assets/img/utf.png" alt="" class="img-fluid"></a> -->
-      </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Biblioteca UTFPR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="aluno.html">Gestão de Alunos</a></li>
-          <li><a href="autor.html">Gestão de Autores</a></li>
-          <li><a href="obra.html">Gestão de Obras</a></li>
-          <li><a href="emprestimo.html">Realizar empréstimos</a></li>
-          <li><a href="relatorio.html">Relatórios</a></li>          
-        </ul>
-      </nav><!-- .nav-menu -->
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="aluno.html">Gestão de Alunos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="autor.html">Gestão de Autores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="obra.html">Gestão de Obras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="emprestimos.html">Realizar empréstimos</a>
+        </li>
+      </ul>      
     </div>
-  </header>
+  </nav>
 
-  <!-- ======= Form Section ======= -->
-  <div id="div">
+  <h3>Gestão de Alunos</h3>
+
+  <!-- CONTAINER -->
+  <div id="container">
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -121,33 +127,6 @@
       <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
   </div>
-  
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>UTFPR</h3>
-      <p>Universidade Tecnológica Federal do Paraná</p>
-      <div class="copyright">
-        &copy; Copyright <strong><span>UTFPR</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 
 </body>
