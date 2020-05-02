@@ -57,14 +57,14 @@
         <li class="nav-item">
           <a class="nav-link" href="emprestimos.html">Realizar empréstimos</a>
         </li>
-      </ul>      
+      </ul>
     </div>
   </nav>
 
   <h3>Gestão de Alunos</h3>
 
-  <!-- CONTAINER -->
-  <div id="container">
+  <!-- FORM-CONTAINER -->
+  <div class="container">
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -124,8 +124,52 @@
           <input type="text" class="form-control" id="inputZip">
         </div>
       </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="optionAluno"
+          checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Aluno
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="optionServidor">
+        <label class="form-check-label" for="exampleRadios2">
+          Servidor
+        </label>
+      </div>
       <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome do autor</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>José de Alencar</td>
+          <td align="right">
+            <button type="submit" class="btn btn-primary">Editar</button>
+            <button type="submit" class="btn btn-primary">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Stallings</td>
+          <td align="right">
+            <button type="submit" class="btn btn-primary">Editar</button>
+            <button type="submit" class="btn btn-primary">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 
