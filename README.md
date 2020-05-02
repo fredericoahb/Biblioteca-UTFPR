@@ -43,6 +43,16 @@ Database: PostgreSQL
 ## História de Usuário
 Análise de Requisitos do projeto.
 
+### Requisitos Funcionais
+* F001 – Gerencia de Usuários
+* F002 – Empréstimo/Devoluções
+* F003 – Gerencia de Acervo
+### Requisitos Não Funcionais
+* Confiabilidade - RNF001; RNF002; RNF003; RNF004
+* Eficiência - RNF005; RNF006; RNF007
+* Portabilidade - RNF009
+* Compatibilidade - RNF010
+
 ## Interface
 Algumas telas geradas e aprovadas pelo usuário.
 
