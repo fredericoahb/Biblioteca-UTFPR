@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/utf.png" rel="icon">
-    <link href="assets/img/utf.png" rel="apple-touch-icon">
+    <link href="assets/img/one.png" rel="icon">
+    <link href="assets/img/one.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -66,12 +66,27 @@
 
     <div class="container">
         <form>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputUsername">Nome da obra</label>
+                    <input type="text" class="form-control" id="inputNomeDaObra">
                 </div>
-                <div class="col">
-                    <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+                <div class="form-group col-md-6">
+                    <label for="inputUsername">Nome do autor</label>
+                    <input type="text" class="form-control" id="inputNomeDoAutor">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputUsername">Ano da publicação</label>
+                    <input type="text" class="form-control" id="inputAnoPublicacao">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputUsername">Tipo da Obra</label>
+                    <input type="text" class="form-control" id="inputTipoObra">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
                 </div>
             </div>
         </form>
@@ -83,14 +98,20 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nome do autor</th>
+                    <th scope="col">Nome da obra</th>
+                    <th scope="col">Nome do(s) autor(es)</th>
+                    <th scope="col">Ano da publicação</th>
+                    <th scope="col">Tipo da Obra</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>José Alencar</td>
+                    <td>Iracema</td>
+                    <td>José de Alencar</td>
+                    <td>1865</td>
+                    <td>Romance</td>
                     <td align="right">
                         <button type="submit" class="btn btn-primary">Editar</button>
                         <button type="submit" class="btn btn-primary">Excluir</button>
@@ -98,8 +119,11 @@
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Stallings</td>
-                    <td align="right"> 
+                    <td>Data & Computer Communications</td>
+                    <td>Willian Stallings</td>
+                    <td>1985</td>
+                    <td>Computação</td>
+                    <td align="right">
                         <button type="submit" class="btn btn-primary">Editar</button>
                         <button type="submit" class="btn btn-primary">Excluir</button>
                     </td>
