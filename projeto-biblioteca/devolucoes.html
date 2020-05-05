@@ -37,7 +37,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Biblioteca UTFPR</a>
+        <a class="navbar-brand" href="index.html">Biblioteca One</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,34 +46,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="aluno.html">Gestão de Alunos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="autor.html">Gestão de Autores</a>
-                </li>
+                    <a class="nav-link" href="aluno.html">Gestão de Usuários</a>
+                </li>                
                 <li class="nav-item">
                     <a class="nav-link" href="obra.html">Gestão de Obras</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="emprestimos.html">Realizar empréstimos</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="devolucoes.html">Realizar devoluções</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <h3>Gestão de Autores</h3>
+    <h3>Devoluções</h3>
 
     <div class="container">
         <form>
-            <div class="form-group row">
-                <div class="form-group col-md-6">
-                    <label for="inputUsername">Nome do Autor</label>
-                    <input type="text" class="form-control" id="inputAutor">
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="labelUsername">Nome do usuário</label>
+                    <input type="text" class="form-control" id="inputUsuario">
                 </div>
-            </div>
+            </div>         
+
             <div class="form-group row">
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" class="btn btn-primary">Procurar</button>
                 </div>
             </div>
         </form>
@@ -84,25 +85,32 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nome do autor</th>
+                    <th scope="col">Nome da obra</th>
+                    <th scope="col">Número do exemplar</th>
+                    <th scope="col">Data do Empréstimo</th>
+                    <th scope="col">Data Prevista da Devolução</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>José de Alencar</td>
+                    <td>Iracema</td>
+                    <td>1</td>
+                    <td>05/05/2020</td>
+                    <td>12/05/2020</td>  
                     <td align="right">
-                        <button type="submit" class="btn btn-primary">Editar</button>
-                        <button type="submit" class="btn btn-primary">Excluir</button>
+                        <button type="submit" class="btn btn-primary">Devolver</button>                        
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>William Stallings</td>
+                    <td>Data & Computer Communications</td>
+                    <td>12</td>
+                    <td>05/05/2020</td>
+                    <td>12/05/2020</td>  
                     <td align="right">
-                        <button type="submit" class="btn btn-primary">Editar</button>
-                        <button type="submit" class="btn btn-primary">Excluir</button>
+                        <button type="submit" class="btn btn-primary">Devolver</button>                    
                     </td>
                 </tr>
             </tbody>

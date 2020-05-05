@@ -37,7 +37,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Biblioteca One</a>
+        <a class="navbar-brand" href="index.html">Biblioteca One</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,16 +46,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="aluno.html">Gestão de Alunos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="autor.html">Gestão de Autores</a>
+                    <a class="nav-link" href="aluno.html">Gestão de Usuários</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="obra.html">Gestão de Obras</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="emprestimos.html">Realizar empréstimos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="devolucoes.html">Realizar devoluções</a>
                 </li>
             </ul>
         </div>
@@ -67,21 +67,39 @@
     <div class="container">
         <form>
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputUsername">Nome da obra</label>
+                <div class="form-group col-md-10">
+                    <label for="labelNomeDaObra">Nome da obra</label>
                     <input type="text" class="form-control" id="inputNomeDaObra">
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername">Nome do autor</label>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="labelNomeDoAutor">Nome do autor</label>
                     <input type="text" class="form-control" id="inputNomeDoAutor">
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername">Ano da publicação</label>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="labelTipoDaObra">Tipo da Obra</label>
+                    <input type="text" class="form-control" id="inputTipoDaObra">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="labelAnoPublicacao">Ano da publicação</label>
                     <input type="text" class="form-control" id="inputAnoPublicacao">
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername">Tipo da Obra</label>
-                    <input type="text" class="form-control" id="inputTipoObra">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="labelQtdExemplar">Quantidade de Exemplares</label>
+                    <input type="text" class="form-control" id="inputQtdExemplar">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="labelSituacao">Situação</label>
+                    <input type="text" class="form-control" id="inputSituacao">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="labelAnoAquisicao">Ano da aquisição</label>
+                    <input type="text" class="form-control" id="inputAnoAquisicao">
                 </div>
             </div>
             <div class="form-group row">
