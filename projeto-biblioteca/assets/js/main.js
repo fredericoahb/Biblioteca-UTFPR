@@ -201,7 +201,7 @@ $(document).ready(function(){
         var addto = "#field" + next;
         var addRemove = "#field" + (next);
         next = next + 1;
-        var newIn = '<input class="input" id="field"' + next + '" name="field' + next + '" type="text">';
+        var newIn = '<input class="form-control" id="field' + next + '" name="field' + next + '" type="text">';
         var newInput = $(newIn);
         var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
         var removeButton = $(removeBtn);
@@ -217,6 +217,10 @@ $(document).ready(function(){
                 $(this).remove();
                 $(fieldID).remove();
             });
+    });
+
+    $('input[type=radio]').change(function () {
+      console.log($(this).val());
     });
 });
 
