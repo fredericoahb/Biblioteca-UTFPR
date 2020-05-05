@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/utf.png" rel="icon">
-    <link href="assets/img/utf.png" rel="apple-touch-icon">
+    <link href="assets/img/one.png" rel="icon">
+    <link href="assets/img/one.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -37,7 +37,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Biblioteca One</a>
+        <a class="navbar-brand" href="index.html">Biblioteca One</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,16 +46,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="aluno.html">Gestão de Alunos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="autor.html">Gestão de Autores</a>
+                    <a class="nav-link" href="aluno.html">Gestão de Usuários</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="obra.html">Gestão de Obras</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="emprestimos.html">Realizar empréstimos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="devolucoes.html">Realizar devoluções</a>
                 </li>
             </ul>
         </div>
@@ -66,15 +66,88 @@
 
     <div class="container">
         <form>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="labelNomeDaObra">Nome da obra</label>
+                    <input type="text" class="form-control" id="inputNomeDaObra">
                 </div>
-                <div class="col">
-                    <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="labelNomeDoAutor">Nome do autor</label>
+                    <input type="text" class="form-control" id="inputNomeDoAutor">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="labelTipoDaObra">Tipo da Obra</label>
+                    <input type="text" class="form-control" id="inputTipoDaObra">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="labelAnoPublicacao">Ano da publicação</label>
+                    <input type="text" class="form-control" id="inputAnoPublicacao">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="labelQtdExemplar">Quantidade de Exemplares</label>
+                    <input type="text" class="form-control" id="inputQtdExemplar">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="labelSituacao">Situação</label>
+                    <input type="text" class="form-control" id="inputSituacao">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="labelAnoAquisicao">Ano da aquisição</label>
+                    <input type="text" class="form-control" id="inputAnoAquisicao">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
                 </div>
             </div>
         </form>
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome da obra</th>
+                    <th scope="col">Nome do(s) autor(es)</th>
+                    <th scope="col">Ano da publicação</th>
+                    <th scope="col">Tipo da Obra</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Iracema</td>
+                    <td>José de Alencar</td>
+                    <td>1865</td>
+                    <td>Romance</td>
+                    <td align="right">
+                        <button type="submit" class="btn btn-primary">Editar</button>
+                        <button type="submit" class="btn btn-primary">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Data & Computer Communications</td>
+                    <td>Willian Stallings</td>
+                    <td>1985</td>
+                    <td>Computação</td>
+                    <td align="right">
+                        <button type="submit" class="btn btn-primary">Editar</button>
+                        <button type="submit" class="btn btn-primary">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </body>
