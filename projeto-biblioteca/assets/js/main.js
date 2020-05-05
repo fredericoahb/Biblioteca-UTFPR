@@ -220,4 +220,13 @@ $(document).ready(function(){
     });
 });
 
+$(window).on('click', function() {
+  $('#modalDevolucao').modal('show');
+});
+
+$(".save-modal").on('click', function() {
+  $('#modalDevolucao').modal('hide');
+});
+
+
 })(jQuery);
