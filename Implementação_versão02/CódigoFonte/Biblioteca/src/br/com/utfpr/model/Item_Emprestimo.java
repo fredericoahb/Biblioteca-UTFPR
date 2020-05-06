@@ -11,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cascade;
@@ -44,6 +45,10 @@ public class Item_Emprestimo implements Serializable{
 	
 	@Column(name = "valor_multa_item_emprestimo")
 	private Double valor_multa_item_emprestimo;
+	
+	@OneToOne
+	@JoinColumn(name = "id_obra")
+	private Obra obra;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "id_emprestimo")
@@ -102,6 +107,14 @@ public class Item_Emprestimo implements Serializable{
 		this.valor_multa_item_emprestimo = valor_multa_item_emprestimo;
 	}
 
+	public Obra getObra() {
+		return obra;
+	}
+
+	public void setObra(Obra obra) {
+		this.obra = obra;
+	}
+
 	public Emprestimo getEmprestimo() {
 		return emprestimo;
 	}
@@ -130,6 +143,7 @@ public class Item_Emprestimo implements Serializable{
 				+ ((dt_prev_devolucao_item_emprestimo == null) ? 0 : dt_prev_devolucao_item_emprestimo.hashCode());
 		result = prime * result + ((emprestimo == null) ? 0 : emprestimo.hashCode());
 		result = prime * result + ((id_item_emprestimo == null) ? 0 : id_item_emprestimo.hashCode());
+		result = prime * result + ((obra == null) ? 0 : obra.hashCode());
 		result = prime * result + ((reserva == null) ? 0 : reserva.hashCode());
 		result = prime * result + (situacao_item_emprestimo ? 1231 : 1237);
 		result = prime * result + ((valor_multa_item_emprestimo == null) ? 0 : valor_multa_item_emprestimo.hashCode());
@@ -170,6 +184,11 @@ public class Item_Emprestimo implements Serializable{
 				return false;
 		} else if (!id_item_emprestimo.equals(other.id_item_emprestimo))
 			return false;
+		if (obra == null) {
+			if (other.obra != null)
+				return false;
+		} else if (!obra.equals(other.obra))
+			return false;
 		if (reserva == null) {
 			if (other.reserva != null)
 				return false;
@@ -184,6 +203,6 @@ public class Item_Emprestimo implements Serializable{
 			return false;
 		return true;
 	}
-	
+
 	
 }
