@@ -203,7 +203,7 @@ $(document).ready(function(){
         next = next + 1;
         var newIn = '<input class="form-control" id="field' + next + '" name="field' + next + '" type="text">';
         var newInput = $(newIn);
-        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" style="float: right;">-</button></div><div id="field">';
         var removeButton = $(removeBtn);
         $(addto).after(newInput);
         $(addRemove).after(removeButton);
@@ -220,7 +220,17 @@ $(document).ready(function(){
     });
 
     $('input[type=radio]').change(function () {
-      console.log($(this).val());
+      
+      if($(this).val() == 'optionAluno'){
+        $("#div-ra").show();
+        $("#div-siape").hide();
+      } else{
+        console.log("deu bom - servidor")
+        $("#div-siape").show();
+        $("#div-ra").hide();
+      }
+
+
     });
 });
 
