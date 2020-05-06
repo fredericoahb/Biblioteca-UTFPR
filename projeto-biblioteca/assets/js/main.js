@@ -201,9 +201,9 @@ $(document).ready(function(){
         var addto = "#field" + next;
         var addRemove = "#field" + (next);
         next = next + 1;
-        var newIn = '<input class="input" id="field"' + next + '" name="field' + next + '" type="text">';
+        var newIn = '<input class="form-control" id="field' + next + '" name="field' + next + '" type="text">';
         var newInput = $(newIn);
-        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" style="float: right;">-</button></div><div id="field">';
         var removeButton = $(removeBtn);
         $(addto).after(newInput);
         $(addRemove).after(removeButton);
@@ -218,6 +218,29 @@ $(document).ready(function(){
                 $(fieldID).remove();
             });
     });
+
+    $('input[type=radio]').change(function () {
+      
+      if($(this).val() == 'optionAluno'){
+        $("#div-ra").show();
+        $("#div-siape").hide();
+      } else{
+        console.log("deu bom - servidor")
+        $("#div-siape").show();
+        $("#div-ra").hide();
+      }
+
+
+    });
 });
+
+$(window).on('click', function() {
+  $('#modalDevolucao').modal('show');
+});
+
+$(".save-modal").on('click', function() {
+  $('#modalDevolucao').modal('hide');
+});
+
 
 })(jQuery);

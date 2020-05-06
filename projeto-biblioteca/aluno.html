@@ -47,7 +47,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="aluno.html">Gestão de Usuários</a>
-        </li>        
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="obra.html">Gestão de Obras</a>
         </li>
@@ -61,7 +61,7 @@
     </div>
   </nav>
 
-  <h3>Gestão de Usuários</h3>
+  <h3 style="margin-left: 1.0rem;">Gestão de Usuários</h3>
 
   <!-- FORM-CONTAINER -->
   <div class="container">
@@ -78,89 +78,104 @@
       </div>
       <div class="form-group row">
         <input type="hidden" name="count" value="1" />
-        <div class="control-group col-md-6" id="fields">
+        <div class="control-group col-md-4" id="fields">
           <label for="inputTelefone">Telefone</label>
           <div class="controls" id="profs">
-            <form class="input-append">
+            <form>
               <div id="field">
-                <input class="input" id="field1" name="prof1" type="text" data-items="8" />
-                <button id="b1" class="btn add-more" type="button">+</button>
+                <input class="form-control" id="field1" name="prof1" type="text" data-items="4" />
+                <button id="b1" class="btn btn-light add-more" type="button" style="float: right;">+</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <div class="form-row">
-        <div class="form-group col-md-10">
-          <label for="inputAddress">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputCity">Cidade</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputState">Estado</label>
-          <select id="inputState" class="form-control">
-            <option selected>Escolha...</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            <option value="EX">Estrangeiro</option>
-          </select>
-        </div>
-        <div>
-          <input type="hidden" name="count" value="1" />
-          <div class="control-group col-md-2" id="fields-end">
-            <label for="inputCEP">CEP</label>
-            <div class="controls" id="profs">
-              <form class="input-append">
-                <div id="field">
-                  <input class="input" id="field1" name="prof1" type="text" data-items="8" />
-                  <button id="b2" class="btn add-more-end" type="button">+</button>
-                </div>
-              </form>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+              style="margin-left: -1.7rem;">
+              Endereço
+            </button>
+            <button id="b2" class="btn add-more-card pull-right" type="button" style="float: right;">+</button>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="card-group col-sm">
+                <label for="inputAddress">Logradouro</label>
+                <input type="text" class="form-control" id="inputAddress">
+              </div>
+              <div class="card-group col-md-4">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="card-group col-md-4">
+                <label for="inputState">Estado</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Escolha...</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="EX">Estrangeiro</option>
+                </select>
+              </div>
+              <div class="card-group col-md-4">
+                <label for="labelCEP">CEP</label>
+                <input class="form-control" id="inputCep" name="inputCep" type="text" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="optionAluno"
-          checked>
-        <label class="form-check-label" for="exampleRadios1">
-          Aluno
-        </label>
+      <br>
+      <div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="optionAluno"
+            checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Aluno
+          </label>
+          <div id="div-ra" class="form-check col-md-4">
+            <label for="labelRA">Registro Acadêmico</label>
+            <input type="text" class="form-control" id="inputRA">
+          </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="optionServidor">
+          <label class="form-check-label" for="exampleRadios2">
+            Servidor
+          </label>
+          <div id="div-siape" class="form-check col-md-4" style="display:none;">
+            <label for="labelRA">SIAPE</label>
+            <input type="text" class="form-control" id="inputSIAPE">
+          </div>
+        </div>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="optionServidor">
-        <label class="form-check-label" for="exampleRadios2">
-          Servidor
-        </label>
-      </div>
+      <br>
       <div class="form-group row">
         <div class="col-md-6">
           <button type="submit" class="btn btn-primary">Salvar</button>
