@@ -56,16 +56,20 @@ Análise de Requisitos do projeto.
 ## Interface
 Algumas telas do sistemas.
 
-### Gestão de Usuários
+### Tela de Gestão de Usuários
+
 <img src="Gestao de Usuarios.png"/>
 
-### Gestão de Obras
+### Tela de Gestão de Obras
+
 <img src="Gestao de Obras.png"/>
 
-### Empréstimos
-<img src="Emprestimos.png"/>
+### Tela de Empréstimos
 
-### Devoluções
+<img src="Emprestimo.png"/>
+
+### Tela Devoluções
+
 <img src="Devolucoes.png"/>
 
 ## Funcionalidades implementadas:
