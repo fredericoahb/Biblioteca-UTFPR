@@ -54,13 +54,33 @@ Análise de Requisitos do projeto.
 * Compatibilidade - RNF010
 
 ## Interface
-Algumas telas geradas e aprovadas pelo usuário.
+Algumas telas do sistemas.
+
+### Gestão de Usuários
+<img src="Gestao de Usuarios.png"/>
+
+### Gestão de Obras
+<img src="Gestao de Obras.png"/>
+
+### Empréstimos
+<img src="Emprestimos.png"/>
+
+### Devoluções
+<img src="Devolucoes.png"/>
 
 ## Funcionalidades implementadas:
-Algumas classes implementadas. 
+Nosso projeto gira em torno de três grandes classes. As características de cada classe estão listadas abaixo. 
+
+### 1. Aluno:
+
+### 2. Funcionario:
+
+### 3. Obra:
 
 ## Banco de Dados
-Modelo físico de dados implementado e aprovado pelo usuário.
+Modelo do Banco de Dados
+
+<img src="Diagrama_Banco_Dados.png"/>
 
 ## Integração
 Diagrama de rastreabilidade contendo todos os artefatos do projeto aprovados pelo usuário.
