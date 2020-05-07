@@ -54,7 +54,7 @@ Análise de Requisitos do projeto.
 * Compatibilidade - RNF010
 
 ## Interface
-Algumas telas do sistemas.
+Algumas telas do sistema.
 
 ### Tela de Gestão de Usuários
 
