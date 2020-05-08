@@ -87,5 +87,11 @@ Modelo do Banco de Dados
 <img src="Diagrama_Banco_Dados.png"/>
 
 ## Integração
-Diagrama de rastreabilidade contendo todos os artefatos do projeto aprovados pelo usuário.
+
+### Diagrama de Rastreabilidade
+No diagrama podem ser encontrados diversos artefatos desenvolvidos para o projeto representado em colunas. Os requisitos funcionais especificados geraram um modelo de dados, as interfaces gráficas e a implementaçao da aplicação.
+
+<img src="Diagrama de Rastreabilidade.png"/>
+
+Os detalhes dos artefatos gerados podem ser consultados em arquivos próprios armazenados neste repositório.
 
