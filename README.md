@@ -43,15 +43,55 @@ Database: PostgreSQL
 ## História de Usuário
 Análise de Requisitos do projeto.
 
+### Requisitos Funcionais
+* F001 – Gerencia de Usuários
+* F002 – Empréstimo/Devoluções
+* F003 – Gerencia de Acervo
+### Requisitos Não Funcionais
+* Confiabilidade - RNF001; RNF002; RNF003; RNF004
+* Eficiência - RNF005; RNF006; RNF007
+* Portabilidade - RNF009
+* Compatibilidade - RNF010
+
 ## Interface
-Algumas telas geradas e aprovadas pelo usuário.
+Algumas telas do sistema.
+
+### Tela de Gestão de Usuários
+
+<img src="Gestao de Usuarios.png"/>
+
+### Tela de Gestão de Obras
+
+<img src="Gestao de Obras.png"/>
+
+### Tela de Empréstimos
+
+<img src="Emprestimo.png"/>
+
+### Tela Devoluções
+
+<img src="Devolucoes.png"/>
 
 ## Funcionalidades implementadas:
-Algumas classes implementadas. 
+Nosso projeto gira em torno de três grandes classes. As características de cada classe estão listadas abaixo. 
+
+### 1. Aluno:
+
+### 2. Funcionario:
+
+### 3. Obra:
 
 ## Banco de Dados
-Modelo físico de dados implementado e aprovado pelo usuário.
+Modelo do Banco de Dados
+
+<img src="Diagrama_Banco_Dados.png"/>
 
 ## Integração
-Diagrama de rastreabilidade contendo todos os artefatos do projeto aprovados pelo usuário.
+
+### Diagrama de Rastreabilidade
+No diagrama podem ser encontrados diversos artefatos desenvolvidos para o projeto representado em colunas. Os requisitos funcionais especificados geraram um modelo de dados, as interfaces gráficas e a implementaçao da aplicação.
+
+<img src="Diagrama de Rastreabilidade.png"/>
+
+Os detalhes dos artefatos gerados podem ser consultados em arquivos próprios armazenados neste repositório.
 

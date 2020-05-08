@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+
+
+  <application>
+  	<resource-bundle>
+  	<base-name>br.com.utfpr.idioma.messages</base-name>
+      <!-- Variavel usada pelo sistema -->
+   	<var>msg</var>
+  	</resource-bundle>
+  
+  <!-- Idiomas traduzidos -->
+  <locale-config>
+   <default-locale>pt_BR</default-locale>
+   <supported-locale>pt_BR</supported-locale>
+   <supported-locale>en_US</supported-locale>
+   <supported-locale>es_ES</supported-locale>
+  </locale-config>
+  
+  </application>
+  
+  <!-- Regras de Navegação -->
+ <navigation-rule>
+  <navigation-case>
+   <from-outcome>recuperar_senha</from-outcome>
+   <to-view-id>/recuperar_senha.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <navigation-case>
+   <from-outcome>novo_cadastro_curriculo</from-outcome>
+   <to-view-id>/novo_usuario.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <navigation-case>
+   <from-outcome>voltar</from-outcome>
+   <to-view-id>/inicial.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <navigation-case>
+   <from-outcome>login</from-outcome>
+   <to-view-id>/login.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+  
+  
+</faces-config>
